@@ -5,6 +5,8 @@
 
 set -ex
 
+export DEBIAN_FRONTEND=noninteractive
+
 apt-get update
 
 apt-get install -y \
@@ -25,8 +27,7 @@ apt-get install -y \
   libsuitesparse-dev \
   libudev-dev \
   libusb-1.0-0-dev \
-  libvtk5-dev \
-  libvtk5-qt4-dev \
+  libvtk7-dev \
   mesa-utils \
   openjdk-8-jdk \
   zlib1g-dev \
@@ -36,10 +37,18 @@ apt-get install -y \
   python-numpy \
   python-pip \
   python-scipy \
-  python-vtk \
   python-yaml \
+  python3-dev \
+  python3-matplotlib \
+  python3-numpy \
+  python3-pip \
+  python3-scipy \
+  python3-yaml \
   sudo
 
+pip install matplotlib numpy scipy vtk PyYAML
+
+pip3 install vtk pyrealsense2 opency-python
 
   # optional cleanup to make the docker image smaller
   # rm -rf /var/lib/apt/lists/*
