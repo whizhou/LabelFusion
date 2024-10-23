@@ -51,4 +51,4 @@ pip install matplotlib numpy scipy vtk PyYAML
 pip3 install vtk pyrealsense2 opency-python
 
   # optional cleanup to make the docker image smaller
-  # rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/*
