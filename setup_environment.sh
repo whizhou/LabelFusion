@@ -24,3 +24,10 @@ cdlf()
     cd $LABELFUSION_SOURCE_DIR
 }
 export -f cdlf 
+
+run_realsense_lcm()
+{
+    bash ~/labelfusion/realsense/run_realsense_lcm.sh
+}
+export -f run_realsense_lcm
+

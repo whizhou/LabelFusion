@@ -38,8 +38,16 @@ apt-get install -y \
   python-scipy \
   python-vtk \
   python-yaml \
+  python3-dev \
+  python3-matplotlib \
+  python3-numpy \
+  python3-pip \
+  python3-scipy \
+  python3-vtk \
+  python3-yaml \
+  python3-pyrealsense2\
   sudo
 
 
   # optional cleanup to make the docker image smaller
-  # rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/*
